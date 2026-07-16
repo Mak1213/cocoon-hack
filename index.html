@@ -5,17 +5,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocoon Hack!公式Webサイト</title>
     <meta name="distcription" content="HAL東京ミュージック学科が主催する「もはやなんでもあり」な夏のDJイベント！" >
-    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Cocoon Hack!公式Webサイト</h1>
-    </header>
-    <section id="maincontent">
-        <p>Information Coming Soon...</p>
-    </section>
-    <footer>
-        <small>&copy;2026 HAL東京グラフィックデザイン学科, All rights reserved.</small>
-    </footer>
-</body>
+    <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <!-- pc-base -->
+        <div class="pc-back">
+            <img src="image/pc_title-logo.svg" alt="" class="pc-titleLogo">
+            <img src="image/pc_hiduke.svg" alt="" class="pc-hiduke">
+        </div>
+
+        <!-- for_responsive -->
+        <div class="phone-width">
+            <!-- menu -->
+            <div class="menu-btn">
+                <img src="image/humburgar.svg" alt="">
+            </div>
+            <ul class="slide-menu white-text grass">
+                <li><h2>menu</h2></li>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#about-section">Cocoon Hack!!とは</a></li>
+                <li><a href="#lineUp-section">出演者一覧</a></li>
+                <li><a href="#Info-section">開催情報</a></li>
+                <li><a href="#timeSchedule-section">タイムスケジュール</a></li>
+            </ul>
+
+            <!-- hero -->
+            <article class="hero">
+                <img src="image/titleLogo.svg" alt="" class="title-logo">
+                <img src="image/hero8-26.svg" alt="" class="hiduke">
+                <p class="white-text hero-time">Aホール 13:30-17:30</p>
+            </article>
+
+            <!-- About -->
+            <div class="SectionTitle white-text" id="about-section">
+                <p>ABOUT</p>
+                <p>Cocoon Hack!!とは</p>
+            </div>
+            <article class="about">
+                <img src="image/DJ.png" alt="" class="img-dj">
+                <div class="about-text">
+                    <p class="about-subtitle">ミュージック学科主体！</p>
+                    <h1 class="white-text">DJ・パフォーマンス<br>イベント</h1>
+                    <div class="grass mat-01">
+                        <p class="white-text mat-01-text">
+                            AS・HEW・冬のイベント以外では、学生同士が交流する機会が少ない。そこで夏にも、ミュージックの仲間や先輩、他学科と気軽につながれるイベントを開催します。
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="content">
+                <p class="SubTitle yellow-text">パフォーマンスは何でもあり</p>
+                <div class="img-performance">
+                    <div class="grass mat-02">
+                        <p class="yellow-text mat-title">
+                            DJもパフォーマンスも<br>ジャンルは自由！何でもあり！
+                        </p>
+                        <p class="white-text mat-text">
+                            DJはオールジャンルOK <br>ダンス・ビートボックス・弾き語り・漫才など<br>
+                            ジャンルを問わず出演OK。<br>過去にはリコーダーアンサンブルも！ <br>参加無料・誰でも歓迎のイベントです。
+                        </p>
+                    </div>
+                </div>
+
+                <p class="SubTitle2 yellow-text">学年を超えて交流できる機会に</p>
+                <div class="img-kouryuu">
+                    <div class="grass mat-03">
+                        <p class="mat-title yellow-text">   
+                            縦のつながりが生まれる場所
+                        </p>
+                        <p class="mat-text white-text">
+                            普段は関わる機会が少ない先輩や後輩とも<br>
+                            イベントを通して自然に交流できます。
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Line Up -->
+            <div class="SectionTitle" id="lineUp-section">
+                <p>LINE UP</p>
+                <p>出演者一覧</p>
+            </div>
+            <article class="LineUp">
+                <div class="grass lineUp-box lineUp-margin">
+                    <img src="image/Riku.png" alt="">
+                    <div>
+                        <p class="lineUp-title white-text">Riku</p>
+                        <p class="lineUp-text white-text">邦楽ロックからEDMまで幅広く流すオールジャンルDJ。会場の空気に合わせた選曲が持ち味。</p>
+                    </div>
+                </div>
+                <div class="grass lineUp-box lineUp-margin">
+                    <img src="image/MIna.png" alt="">
+                    <div>
+                        <p class="lineUp-title white-text">Mina</p>
+                        <p class="lineUp-text white-text">ヒップホップを中心に、力強い動きとキレのある振付でステージを盛り上げる。</p>
+                    </div>
+                </div>
+                <div class="grass lineUp-box lineUp-margin">
+                    <img src="image/Sora.png" alt="">
+                    <div>
+                        <p class="lineUp-title white-text">Sora</p>
+                        <p class="lineUp-text white-text">ビートボックスでリズムと音色を作り出すパフォーマー。ソロでも会場を巻き込むスタイル。</p>
+                    </div>
+                </div>
+                <div class="grass lineUp-box">
+                    <img src="image/Nagi.png" alt="">
+                    <div>
+                        <p class="lineUp-title white-text">Nagi</p>
+                        <p class="lineUp-text white-text">ギター弾き語りで出演。落ち着いた歌声とシンプルな演奏で、イベントに緩急を作る。</p>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Infomation -->
+            <div class="SectionTitle" id="Info-section">
+                <p>INFORMATION</p>
+                <p>開催情報</p>
+            </div>
+            <article class="Info">
+                <ul>
+                    <li class="li-margin">
+                        <p class="Info-title1">日時</p>
+                        <div class="Info-textline Info-textbox white-text">
+                            <h1>8/26</h1>
+                            <p class="sub-info">※夏期出校日の翌日</p>
+                        </div>
+                    </li>
+                    <li class="li-margin">
+                        <p class="Info-title2">開催時間</p>
+                        <div class="Info-textline Info-textbox white-text">
+                            <h2>13:30 - 17:30</h2>
+                            <p class="sub-info">4時間</p>
+                        </div>
+                    </li>
+                    <li class="li-margin">
+                        <p class="Info-title2">開催場所</p>
+                        <div class="Info-textline white-text">
+                            <h3>コクーンタワー Aホール</h3>
+                        </div>
+                    </li>
+                    <li class="li-margin">
+                        <p class="Info-title3" id="timeSchedule-section">タイムスケジュール</p>
+                        <table class="time-schedule">
+                            <tr>
+                                <th class="purple-text left-top">TIME</th>
+                                <th class="purple-text right-top">CONTENTS</th>
+                            </tr>
+                            <tr>
+                                <td class="yellow-text">13:30</td>
+                                <td class="white-text">OPEN/DJ TIME</td>
+                            </tr>
+                            <tr>
+                                <td class="yellow-text">13:50</td>
+                                <td class="white-text">Opening</td>
+                            </tr>
+                            <tr>
+                                <td class="yellow-text">14:00</td>
+                                <td class="white-text">Dance Performance</td>
+                            </tr>
+                            <tr>
+                                <td class="yellow-text">14:20</td>
+                                <td class="white-text">DJ TIME</td>
+                            </tr>
+                            <tr>
+                                <td class="yellow-text">14:40</td>
+                                <td class="white-text">Beatbox Performance</td>
+                            </tr>
+                            <tr>
+                                <td class="yellow-text">15:00</td>
+                                <td class="white-text">Acoustic Performance</td>
+                            </tr>
+                            <tr>
+                                <td class="yellow-text">15:25</td>
+                                <td class="white-text">Break/DJ TIME</td>
+                            </tr>
+                            <tr>
+                                <td class="yellow-text left-bottom">15:50</td>
+                                <td class="white-text right-bottom">Instrumental Solo</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li class="li-margin">
+                        <p class="Info-title2">注意事項</p>
+                        <div class="Info-textbox">
+                            <ul class="Info-caution white-text">
+                                <li>Aホール内での飲食はご遠慮ください。</li>
+                                <li>会場内の壁や床、備品などを傷つけないようご注意ください。</li>
+                                <li>イベント中は大きな音が出る場合があります。心臓の弱い方、音に敏感な方はご注意ください。</li>
+                                <li>周囲の方の迷惑にならないよう、マナーを守ってお楽しみください。</li>
+                                <li>音響機器や照明機材など、会場設備には触れないようお願いいたします。</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+            <!-- footer -->
+            <footer class="white-text">
+                <p>2026<br>Cocoon Hack!!</p>
+            </footer>
+        </div>
+    </body>
+</html>
