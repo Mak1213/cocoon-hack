@@ -1,0 +1,369 @@
+@charset "utf-8";
+
+:root {
+    --base-color: #010002;
+    --text-base: white;
+    --text-highlight: #EEFF00;
+    --border: #5500FF;
+}
+
+/* responsive_pc-view */
+.pc-back {
+    display: grid;
+    padding: 2rem;
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../image/pc_base.png);
+    background-size: cover;
+    background-position: center top;
+}
+
+.pc-hiduke {
+    width: 20%;
+    translate: 0 130%;
+}
+
+.phone-width {
+    background-color: var(--base-color);
+    width: min(100% ,480px);
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* all_setting */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-image: url(../image/hero.png);
+}
+
+.SectionTitle {
+    margin-bottom: 2rem;
+    width: 70%;
+    padding: 0 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    border-bottom: 2px solid var(--border);
+}
+
+.grass {
+    background-color: rgba(3, 3, 86, 0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.white-text, .SectionTitle {
+    color: var(--text-base);
+}
+
+.yellow-text {
+    color: var(--text-highlight);
+}
+
+.purple-text {
+    color: var(--border);
+}
+
+/* menu */
+.menu-btn {
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
+    padding: 0.5rem;
+    width: fit-content;
+}
+
+.slide-menu {
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    position: fixed;
+    z-index: 998;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 2rem 4rem;
+    width: min(85vw, 340px);
+}
+
+.slide-menu a {
+    padding: 0.5rem 2rem;
+    color: var(--text-base);
+    text-decoration: none;
+    background-color: #5500FF;
+    border-radius: 20px;
+}
+
+a:hover {
+    color: var(--base-color);
+    background-color: var(--text-highlight);
+    transition: 150ms ease-in;
+}
+
+/* hero */
+.hero {
+    padding: 2.5rem 1.5rem 2rem;
+    display: grid;
+    grid-template-rows: auto 0.5fr auto auto;
+}
+
+.title-logo {
+    grid-row: 1;
+}
+
+.hiduke {
+    grid-row: 3;
+    translate: 0 3rem   ;
+}
+
+.hero-time {
+    grid-row: 4;
+    padding: 0 0 0 2.5rem;
+    background-image: url(../image/top-mat.svg);
+}
+
+/* about */
+    /* dj */
+.about {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.img-dj {
+    position: absolute;
+    translate: -20% 0;
+}
+
+.about-text {
+    position: relative;
+    padding-top: 4.5rem;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.about-subtitle {
+    display: inline;
+    padding: 0 1rem 0 1.2rem;
+    background-image: url(../image/yellow-mat.svg);
+    background-size: cover;
+    background-position: center top;
+}
+
+.about-text h1 {
+    line-height: 110%;
+    padding: 0.5rem 0 1.2rem;
+}
+
+.mat-01 {
+    translate: 15% 0;
+    margin-left: auto;
+    width: 70%;
+    padding: 1rem 3rem 1rem 1.2rem;
+}
+
+.mat-01-text {
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+/* performance */
+.SubTitle {
+    display: inline;
+    font-size: 0.7rem;
+    padding: .2rem 2rem .4rem 1rem;
+    background-image: url(../image/yellow-border.svg);
+    background-position: -20px 2px;
+}
+
+.content {
+    margin-bottom: 8rem;
+}
+
+.img-performance {
+    margin-bottom: 8%;
+    padding-top: 45%;
+    margin-top: 2rem;
+    background-image: url(../image/performance.png);
+    background-position: center top;
+    background-size: cover;
+}
+
+.mat-02 {
+    width: calc(100% - 4rem);
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0rem;
+}
+
+.mat-text {
+    font-size: 0.8rem;
+}
+
+.mat-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.SubTitle2 {
+    margin-top: 3rem;
+    translate: 5% 0;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    font-size: 0.7rem;
+    padding: .2rem 2rem .4rem 1.5rem;
+    background-image: url(../image/yellow-border2.svg);
+    background-position: 0 2px;
+}
+
+.img-kouryuu {
+    padding-top: 40%;
+    height: 40vh;
+    background-image: url(../image/kouryuu.png);
+    background-position: center top;
+    background-size: cover;
+}
+
+.mat-03 {
+    width: calc(100% - 4rem);
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0rem;
+}
+
+/* line up */
+.LineUp {
+    padding-bottom: 5rem;
+    background-image: url(../image/line-up-back.png);
+    background-size: cover;
+    background-position: center top;
+}
+
+.lineUp-box {
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.lineUp-title {
+    font-size: 1.5rem;
+}
+
+.lineUp-text {
+    font-size: 0.8rem;
+}
+
+.lineUp-margin {
+    margin-bottom: 1.5rem;
+}
+
+/* information */
+.Info {
+    padding: 0 2rem;
+}
+
+.Info ul li li {
+    padding: 0.3rem 0;
+}
+
+.li-margin{
+    padding: 1.5rem 0 1rem;
+}
+
+.Info-textbox {
+    width: fit-content;
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+}
+
+.Info-textline {
+    padding: 0 1.2rem;
+}
+
+.Info-caution {
+    padding: 0 1rem 0 2rem;
+}
+
+.Info-title1 {
+    display: inline;
+    padding: 0 1rem;
+    background-image: url(../image/infomation-back.svg);
+    background-position: center top;
+}
+
+.Info-title2 {
+    display: inline;
+    padding: 0 1rem;
+    background-image: url(../image/infomation-back2.svg);
+    background-position: center top;
+}
+
+.Info-title3 {
+    display: inline;
+    padding: 0 0.8rem;
+    background-image: url(../image/infomation-back3.svg);
+    background-position: center top;
+}
+
+.sub-info {
+    font-size: 1rem;
+}
+
+/* time schedule */
+.time-schedule {
+    margin: 1rem auto 2rem;
+    border: 2px solid var(--border);
+    border-spacing: 0;
+    border-radius: 20px;
+}
+
+.left-top {
+    border-radius: 20px 0 0 0;
+} 
+.right-top{
+    border-radius: 0 20px 0 0;
+}
+
+.left-bottom {
+    border-radius: 0 0 0 20px;
+}
+
+.right-bottom {
+    border-radius: 0 0 20px 0;
+}
+
+tr, td, th {
+    border: 1px solid var(--border);
+}
+
+td, th {
+    padding: .5rem 1.8rem;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 5rem 0 2rem;
+}
